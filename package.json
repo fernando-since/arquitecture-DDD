@@ -1,0 +1,25 @@
+{
+  "name": "ddd-arquitecture",
+  "version": "1.0.0",
+  "description": "Practice with DDD arquitecture",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node src/app/index.ts",
+    "dev": "nodemon --exec ts-node src/app/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fernando Carranza",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0",
+    "tsc": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
