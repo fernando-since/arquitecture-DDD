@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as the base image
-FROM node:20-slim
+FROM node:20-slim AS builder
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -12,11 +12,15 @@ COPY package*.json ./
 RUN npm install
 
 # Copy the rest of your application code to the working directory
+COPY tsconfig.json ./
 COPY . .
+
+# Compilar TypeScript
+RUN npm run build
 
 # Expose the port your Node.js application listens on
 EXPOSE 3000
 
 # Define the command to run your application when the container starts
-CMD ["node", "index.js"] 
+CMD ["node", "dist/app/index.js"] 
 # Replace "server.js" with your application's entry point file

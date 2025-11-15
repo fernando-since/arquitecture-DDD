@@ -16,11 +16,11 @@
 // });
 
 // ----------- Example create server with express -----------
-import express from "express";
-const app: express = express();
+import express, { type Request, type Response } from "express";
+const app = express();
 const port: number = 3000;
 
-app.get("/", (req, res) => {
+app.get("/", (req: Request, res: Response) => {
   console.log("entre");
   // const song = getSong();
   // this will work
