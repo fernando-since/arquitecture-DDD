@@ -2,7 +2,7 @@
   "name": "ddd-arquitecture",
   "version": "1.0.0",
   "description": "Practice with DDD arquitecture",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
     "start": "node src/app/index.ts",
     "dev": "nodemon --exec ts-node src/app/index.ts",
