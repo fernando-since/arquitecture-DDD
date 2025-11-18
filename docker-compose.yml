@@ -11,6 +11,5 @@ services:
     # volumes:
     #   - .:/app
     #   - node_modules:/app/node_modules
-    command: ["node", "dist/app/index.js"]
 # volumes:
 #   node_modules:
